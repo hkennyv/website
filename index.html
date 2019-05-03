@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kenny Huynh">
+  <meta name="description" content="Hi, my name is Kenny. This is my personanl website.">
 
   <title>kenny huynh</title>
   <link rel="shortcut icon" href="favicon.ico">
@@ -32,6 +34,13 @@
       color: black;
       font-size: 22px;
     }
+
+    .bio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
   </style>
 </head>
 <body>
@@ -45,16 +54,20 @@
       </div>
     </header>
     <main>
-      <p>Hi there! I'm Kenny. 👋</p>
-      <p>I'm a <strong>DevOps Engineer</strong> at <strong>ReJoule, Inc.</strong>
-        We are an early-stage startup that creates integrated hardware/software
-        solutions to maximize the value of every battery.
-      </p>
-      <p>I'm originally from <strong>Tracy, CA</strong> and now live in
-        <strong>Irvine, CA</strong>. I've always been excited about technology
-        and am excited to bring it to the cleantech sector.
-      </p>
-      
+      <div className="bio">
+        <img src="kenny.jpg" width="250" height="250" />
+        <div className="bio-text">
+          <p>Hi there! I'm Kenny. 👋</p>
+          <p>I'm a <strong>DevOps Engineer</strong> at <strong>ReJoule, Inc.</strong>
+            We are an early-stage startup that creates integrated hardware/software
+            solutions to maximize the value of every battery.
+          </p>
+          <p>I'm originally from <strong>Tracy, CA</strong> and now live in
+            <strong>Irvine, CA</strong>. I've always been excited about technology
+            and am excited to bring it to the cleantech sector.
+          </p>
+          </div>
+      </div>
     </main>
   </div>
 </body>
