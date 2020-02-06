@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Kenny Huynh">
-  <meta name="description" content="Hi, my name is Kenny. This is my personanl website.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kenny Huynh" />
+    <meta
+      name="description"
+      content="Hi, my name is Kenny. This is my personanl website."
+    />
 
-  <title>kenny huynh</title>
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <title>kenny huynh</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
 
-  <style>
-    body {
-      color: black;
-      font-family: Helvetica, Arial, 'sans-serif';
-      font-size: 16px;
-    }
+    <style>
+      body {
+        color: black;
+        font-family: Helvetica, Arial, "sans-serif";
+        font-size: 16px;
+      }
 
-    i {
-      margin: 0px 0.2em;
-    }
+      i {
+        margin: 0px 0.2em;
+      }
 
-    .bio {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+      .bio {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
-    .bio-img {
-      height: 266px;
-      width: 250px;
-    }
+      .bio-img {
+        height: 266px;
+        width: 250px;
+      }
 
-    .container {
-      align-items: flex-start;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-evenly;
-      max-width: 640px;
-      margin: 0 auto;
-    }
+      .container {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        max-width: 640px;
+        margin: 0 auto;
+      }
 
-    header {
-      margin: 0.3em auto;
-      text-align: center;
-    }
+      header {
+        margin: 0.3em auto;
+        text-align: center;
+      }
 
-    /* .icons a {
+      /* .icons a {
       color: black;
       font-size: 42px;
     } */
 
-    .icon {
-      color: #1d1d1d;
-      fill: none;
-      height: 1.5em;
-      position: relative;
-      margin: 0em 0.2em;
-      width: 1.5em;
-      stroke: currentColor;
-    }
+      .icon {
+        color: #1d1d1d;
+        fill: none;
+        height: 1.5em;
+        position: relative;
+        margin: 0em 0.2em;
+        width: 1.5em;
+        stroke: currentColor;
+      }
 
-    .icon:hover {
-      color: #535c68;
-      transition: 0.1s;
-    }
+      .icon:hover {
+        color: #535c68;
+        transition: 0.1s;
+      }
 
-    .icons {
-      display: flex;
-      justify-content: center;
-    }
+      .icons {
+        display: flex;
+        justify-content: center;
+      }
 
-    .icons a {
-      color:#1d1d1d;
-      line-height: 1.5em;
-      text-decoration: none;
-      margin: 0px 0.2em;
-      transition: color .1s ease-in-out;
-    }
+      .icons a {
+        color: #1d1d1d;
+        line-height: 1.5em;
+        text-decoration: none;
+        margin: 0px 0.2em;
+        transition: color 0.1s ease-in-out;
+      }
 
-    @media (min-width: 500px) {
+      @media (min-width: 500px) {
         .bio {
           flex-direction: row;
           column-gap: 1rem;
@@ -93,61 +96,127 @@
         .icons a {
           /* font-size: 22px; */
         }
-    }
-
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1 class="header__title">Kenny Huynh</h1>
-      <p>me@kennyvh.com</p>
-      <div class="icons">
-        <a href="mailto:me@kennyvh.com/" rel="nofollow noopener" aria-label="email">
-          <svg class="icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-        </a>
-        <a href="https://github.com/hkennyv" rel="nofollow noopener" aria-label="github">
-          <svg class="icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/hkennyv" rel="nofollow noopener" aria-label="linkedin">
-          <svg class="icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-        </a>
-      </div>
-    </header>
-    <main>
-      <div class="bio">
-        <div class="bio-img">
-            <img src="kenny-min.jpg" alt="kenny" width="250" height="266" />
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="header__title">Kenny Huynh</h1>
+        <p>me@kennyvh.com</p>
+        <div class="icons">
+          <a
+            href="mailto:me@kennyvh.com/"
+            rel="nofollow noopener"
+            aria-label="email"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a
+            href="https://github.com/hkennyv"
+            rel="nofollow noopener"
+            aria-label="github"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://stackoverflow.com/users/8539533/khuynh"
+            rel="nofollow noopener"
+            aria-label="linkedin"
+          >
+            <svg
+              class="icon"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 110 110"
+              aria-hidden="true"
+            >
+              <path
+                d="M84.4 93.8V70.6h7.7v30.9H22.6V70.6h7.7v23.2z"
+                fill="black"
+              />
+              <path
+                d="M38.8 68.4l37.8 7.9 1.6-7.6-37.8-7.9-1.6 7.6zm5-18l35 16.3 3.2-7-35-16.4-3.2 7.1zm9.7-17.2l29.7 24.7 4.9-5.9-29.7-24.7-4.9 5.9zm19.2-18.3l-6.2 4.6 23 31 6.2-4.6-23-31zM38 86h38.6v-7.7H38V86z"
+                fill="black"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hkennyv"
+            rel="nofollow noopener"
+            aria-label="linkedin"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
         </div>
-        <div class="bio-text">
-          <p>Hi there! I'm Kenny. 👋</p>
-          <p>
-            I'm a <strong>DevOps Engineer</strong> at <a href="http://www.rejouleenergy.com/"><strong>ReJoule, Inc.</strong></a>
-            We are an early-stage startup with an amazing team whose goal is to maximize the value of every battery through
-            advanced battery diagnostics.
-          </p>
-          <p>
-            At ReJoule, my role is to help develop, deploy, and monitor some of our various hardware and software systems.
-            I really enjoy working through the full stack in pcb design/fab, firmware, and software!
-          </p>
-          <p>
-            I'm originally from Tracy, CA and now live in
-            <strong>Irvine, CA</strong>. Some of my hobbies outside of work include experimenting with new technologies, 
-            traveling, powerlifting, cycling, and hanging out with my lovely cat.
-          </p>
+      </header>
+      <main>
+        <div class="bio">
+          <div class="bio-img">
+            <img src="kenny-min.jpg" alt="kenny" width="250" height="266" />
           </div>
-      </div>
-    </main>
-  </div>
-</body>
+          <div class="bio-text">
+            <p>Hi there! I'm Kenny. 👋</p>
+            <p>
+              I'm a <strong>DevOps Engineer</strong> at
+              <a href="http://www.rejouleenergy.com/"
+                ><strong>ReJoule, Inc.</strong></a
+              >
+              We are an early-stage startup with an amazing team whose goal is
+              to maximize the value of every battery through advanced battery
+              diagnostics.
+            </p>
+            <p>
+              At ReJoule, my role is to help develop, deploy, and monitor some
+              of our various hardware and software systems. I really enjoy
+              working through the full stack in pcb design/fab, firmware, and
+              software!
+            </p>
+            <p>
+              I'm originally from Tracy, CA and now live in
+              <strong>Irvine, CA</strong>. Some of my hobbies outside of work
+              include experimenting with new technologies, traveling,
+              powerlifting, cycling, and hanging out with my lovely cat.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
